@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/assets/vendors/themify-icons/css/themify-icons.css" />
+        <link rel="stylesheet" href="/Portfolio/assets/vendors/themify-icons/css/themify-icons.css" />
       </head>
       <body className={outfit.className}>
         <SnowParticles />
