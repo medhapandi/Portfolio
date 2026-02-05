@@ -16,7 +16,7 @@ const SnowParticles: React.FC = () => {
 
     useEffect(() => {
         const flakes: Snowflake[] = [];
-        const numFlakes = 50;
+        const numFlakes = 100;
 
         for (let i = 0; i < numFlakes; i++) {
             flakes.push({
@@ -25,7 +25,7 @@ const SnowParticles: React.FC = () => {
                 animationDuration: 5 + Math.random() * 10,
                 animationDelay: Math.random() * 5,
                 size: 2 + Math.random() * 4,
-                opacity: 0.3 + Math.random() * 0.7,
+                opacity: 0.5 + Math.random() * 0.5,
             });
         }
 
