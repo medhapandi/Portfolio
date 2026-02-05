@@ -1,3 +1,6 @@
+// Base path for GitHub Pages deployment - change this if your repo name changes
+export const basePath = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
+
 export const personalDetails = {
     name: "Medha P",
     title: "UI/UX Designer | Web Designer | Front-end Developer",

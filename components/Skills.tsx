@@ -1,13 +1,14 @@
 "use client";
 import { StaggerContainer, StaggerItem, FadeIn, SlideUp } from "./MotionWrappers";
+import { basePath } from "@/app/config";
 
 const skills = [
-    { name: "Figma", icon: "/assets/imgs/pencil-case.svg" },
-    { name: "Canva", icon: "/assets/imgs/responsive.svg" },
-    { name: "HTML & CSS", icon: "/assets/imgs/toolbox.svg" },
-    { name: "Google Analytics", icon: "/assets/imgs/analytics.svg" },
-    { name: "User Research", icon: "/assets/imgs/responsive.svg" },
-    { name: "Social Media", icon: "/assets/imgs/pencil-case.svg" },
+    { name: "Figma", icon: `${basePath}/assets/imgs/pencil-case.svg` },
+    { name: "Canva", icon: `${basePath}/assets/imgs/responsive.svg` },
+    { name: "HTML & CSS", icon: `${basePath}/assets/imgs/toolbox.svg` },
+    { name: "Google Analytics", icon: `${basePath}/assets/imgs/analytics.svg` },
+    { name: "User Research", icon: `${basePath}/assets/imgs/responsive.svg` },
+    { name: "Social Media", icon: `${basePath}/assets/imgs/pencil-case.svg` },
 ];
 
 export default function Skills() {

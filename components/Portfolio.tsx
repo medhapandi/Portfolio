@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { StaggerContainer, StaggerItem, FadeIn, SlideUp } from "./MotionWrappers";
+import { basePath } from "@/app/config";
 
 export default function Portfolio() {
     return (
@@ -15,7 +16,7 @@ export default function Portfolio() {
                 <StaggerContainer className="row">
                     <StaggerItem className="col-md-4">
                         <Link href="#" className="portfolio-card">
-                            <img src="/assets/imgs/folio-1.jpg" className="portfolio-card-img" alt="UI/UX Design" />
+                            <img src={`${basePath}/assets/imgs/folio-1.jpg`} className="portfolio-card-img" alt="UI/UX Design" />
                             <div className="portfolio-info-glass">
                                 <h4>UI/UX Design Project</h4>
                                 <p>Category: UI/UX Design</p>
@@ -24,7 +25,7 @@ export default function Portfolio() {
                     </StaggerItem>
                     <StaggerItem className="col-md-4">
                         <Link href="#" className="portfolio-card">
-                            <img className="portfolio-card-img" src="/assets/imgs/folio-2.jpg" alt="Content & Visual Design" />
+                            <img className="portfolio-card-img" src={`${basePath}/assets/imgs/folio-2.jpg`} alt="Content & Visual Design" />
                             <div className="portfolio-info-glass">
                                 <h4>Content & Visual Design</h4>
                                 <p>Category: Visual Design</p>
@@ -33,7 +34,7 @@ export default function Portfolio() {
                     </StaggerItem>
                     <StaggerItem className="col-md-4">
                         <Link href="#" className="portfolio-card">
-                            <img className="portfolio-card-img" src="/assets/imgs/folio-3.jpg" alt="Social Media Creatives" />
+                            <img className="portfolio-card-img" src={`${basePath}/assets/imgs/folio-3.jpg`} alt="Social Media Creatives" />
                             <div className="portfolio-info-glass">
                                 <h4>Social Media Creatives</h4>
                                 <p>Category: Content Design</p>

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { personalDetails } from "@/app/config";
+import { personalDetails, basePath } from "@/app/config";
 import { FadeIn, SlideUp } from "./MotionWrappers";
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
                         <p style={{ whiteSpace: "pre-line", color: "#000000", fontWeight: 500, fontSize: "16px", lineHeight: "1.8" }}>
                             {personalDetails.about.description}
                         </p>
-                        <a href="/assets/Med.pdf" download="Medha_P_Resume.pdf" className="btn-rounded btn btn-outline-primary mt-4">
+                        <a href={`${basePath}/assets/Med.pdf`} download="Medha_P_Resume.pdf" className="btn-rounded btn btn-outline-primary mt-4">
                             <i className="ti-download"></i> Download CV
                         </a>
                     </SlideUp>
