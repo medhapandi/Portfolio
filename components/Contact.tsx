@@ -10,15 +10,14 @@ export default function Contact() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section 
-      ref={sectionRef} 
-      id="contact" 
-      className={`py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto section-reveal ${
-        isVisible ? "revealed" : ""
-      }`}
+    <section
+      ref={sectionRef}
+      id="contact"
+      className={`py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto section-reveal ${isVisible ? "revealed" : ""
+        }`}
     >
-      <div className="flex items-center mb-16">
-        <AnimatedText 
+      <div className="flex items-center mb-10">
+        <AnimatedText
           text="Get In Touch"
           visible={isVisible}
           as="h2"
@@ -27,9 +26,9 @@ export default function Contact() {
         <div className="ml-6 h-[1px] w-full bg-[var(--border)]" />
       </div>
 
-      <div className="max-w-4xl space-y-12">
+      <div className="max-w-4xl space-y-8">
         <h3 className="font-serif text-4xl sm:text-5xl md:text-7xl text-[var(--text-primary)] leading-[1.1]">
-          <AnimatedText 
+          <AnimatedText
             text="Have an idea?"
             visible={isVisible}
             as="span"
@@ -37,7 +36,7 @@ export default function Contact() {
             baseDelay={200}
             wordAnimation={false}
           />
-          <AnimatedText 
+          <AnimatedText
             text="Let's build it together."
             visible={isVisible}
             as="span"
@@ -48,12 +47,12 @@ export default function Contact() {
         </h3>
 
         <p className="text-lg font-sans leading-[1.9] text-[var(--text-muted)] max-w-2xl">
-          I&apos;m currently {personalInfo.availability.toLowerCase()} and actively looking for new opportunities. 
+          I&apos;m currently {personalInfo.availability.toLowerCase()} and actively looking for new opportunities.
           Whether you have a question, a project proposal, or just want to say hi, my inbox is always open.
         </p>
 
         <div className="pt-8">
-          <button 
+          <button
             onClick={() => setIsModalOpen(true)}
             className="group relative inline-flex items-center justify-center px-8 py-5 bg-[var(--bg)] border border-[var(--accent)] text-[var(--accent)] text-lg uppercase tracking-widest font-medium overflow-hidden transition-all duration-500 hover:text-[var(--bg)]"
           >
@@ -70,12 +69,12 @@ export default function Contact() {
 
       {isModalOpen && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
-          <div 
+          <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-pointer"
             onClick={() => setIsModalOpen(false)}
           />
           <div className="relative bg-[var(--bg)] border border-[var(--border)] p-8 sm:p-12 max-w-md w-full shadow-2xl">
-            <button 
+            <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-6 right-6 text-[var(--text-hint)] hover:text-[var(--text-primary)] transition-colors"
             >
@@ -83,11 +82,11 @@ export default function Contact() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            
+
             <h4 className="font-serif text-3xl text-[var(--text-primary)] mb-8">Connect</h4>
-            
+
             <div className="space-y-4">
-              <a 
+              <a
                 href={`mailto:${personalInfo.email}`}
                 className="flex items-center space-x-4 p-4 border border-[var(--border)] hover:border-[var(--accent)] group transition-colors duration-300"
               >
@@ -99,7 +98,7 @@ export default function Contact() {
                 <span className="text-lg font-sans text-[var(--text-muted)] group-hover:text-[var(--text-primary)] transition-colors">Gmail</span>
               </a>
 
-              <a 
+              <a
                 href={personalInfo.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -107,13 +106,13 @@ export default function Contact() {
               >
                 <div className="text-[var(--text-muted)] group-hover:text-[var(--accent)] transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
                 </div>
                 <span className="text-lg font-sans text-[var(--text-muted)] group-hover:text-[var(--text-primary)] transition-colors">LinkedIn</span>
               </a>
 
-              <a 
+              <a
                 href={personalInfo.socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -9,7 +9,7 @@ import { useState, useEffect, useRef } from "react";
 /* Image map — all project images keyed by project id */
 const projectImageMap: Record<string, { front: string; back: string }> = {
   "01": { front: "/images/bride-splash.png", back: "/images/bride-roles.png" },
-  "02": { front: "/images/local-home.png",   back: "/images/local-browse.png" },
+  "02": { front: "/images/local-home.png", back: "/images/local-browse.png" },
 };
 
 export default function Projects() {
@@ -27,8 +27,8 @@ export default function Projects() {
   // Springs — front leads (faster), back lags (slower)
   const springXFront = useSpring(mouseX, { stiffness: 120, damping: 18 });
   const springYFront = useSpring(mouseY, { stiffness: 120, damping: 18 });
-  const springXBack  = useSpring(mouseX, { stiffness: 80,  damping: 15 });
-  const springYBack  = useSpring(mouseY, { stiffness: 80,  damping: 15 });
+  const springXBack = useSpring(mouseX, { stiffness: 80, damping: 15 });
+  const springYBack = useSpring(mouseY, { stiffness: 80, damping: 15 });
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -64,11 +64,10 @@ export default function Projects() {
     <section
       ref={sectionRef}
       id="work"
-      className={`py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto section-reveal ${
-        isVisible ? "revealed" : ""
-      }`}
+      className={`py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto section-reveal ${isVisible ? "revealed" : ""
+        }`}
     >
-      <div className="flex items-center mb-16">
+      <div className="flex items-center mb-10">
         <AnimatedText
           text="Selected Work"
           visible={isVisible}
@@ -90,9 +89,8 @@ export default function Projects() {
               data-project-row="true"
               onMouseEnter={() => handleMouseEnter(project.id)}
               onMouseLeave={handleMouseLeave}
-              className={`group flex items-center w-full py-[1.8rem] border-t border-[rgba(255,255,255,0.06)] ${
-                isLast ? "border-b" : ""
-              } transition-all duration-350 ease-[cubic-bezier(0.16,1,0.3,1)] md:cursor-none`}
+              className={`group flex items-center w-full py-[1.8rem] border-t border-[rgba(255,255,255,0.06)] ${isLast ? "border-b" : ""
+                } transition-all duration-350 ease-[cubic-bezier(0.16,1,0.3,1)] md:cursor-none`}
               style={{ paddingLeft: isHovered ? "12px" : "0px" }}
             >
               {/* Layout: 55px (number) | 1fr (title) | auto (tags + arrow) */}

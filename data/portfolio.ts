@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Med Designs",
-  role: "UI/UX Designer",
+  role: "UI/UX Designer & Front-End Developer",
   tagline: "Designing things people love to use",
   location: "Hosur, IN",
   availability: "Available for work",
@@ -11,11 +11,11 @@ export const personalInfo = {
     github: "#",
     instagram: "#"
   },
-  bio: "An aspiring UI/UX Designer focused on crafting user-centered digital products through interaction design, research, and visual problem-solving. I believe great design is invisible — it just works.",
+  bio: "UI/UX Designer & Front-End Developer with hands-on experience shipping user-centered digital products — from research and wireframes to production-ready code. I design systems that scale and build interfaces that perform.",
   about: [
-    "Hi, I'm Medha. I am a UI/UX Designer dedicated to crafting digital experiences that are both deeply intuitive and visually compelling. With a foundation in Computer Science & Engineering, I bring a pragmatic approach to design—seamlessly bridging the gap between technical feasibility and human-centered solutions.",
-    "My expertise lies in interaction design, comprehensive user research, and complex problem-solving. I specialize in untangling intricate user journeys and translating them into clean, accessible, and high-performing interfaces that deliver real value.",
-    "I believe that great design is built on trust and empathy. Whether I'm establishing robust design systems or refining micro-interactions, my goal is always to deliver polished, inclusive products that users genuinely love to engage with."
+    "I'm Medha — a UI/UX Designer and Front-End Developer who operates at the intersection of design and engineering. With a degree in Computer Science & Engineering, I don't just hand off mockups — I build what I design, ensuring pixel-perfect execution and real-world performance.",
+    "I've led end-to-end product design cycles across mobile and web — conducting user research, mapping complex journeys, architecting information systems, and translating findings into high-fidelity prototypes. On the development side, I work with React, Next.js, and modern CSS to bring those designs to life with clean, maintainable code.",
+    "I thrive in cross-functional environments where design and development move together. Whether it's building a scalable component library, optimizing interaction patterns, or debugging a layout at 2 AM — I ship work that's polished, accessible, and built to last."
   ]
 };
 
