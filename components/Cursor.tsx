@@ -37,11 +37,22 @@ export default function Cursor() {
       document.body.style.cursor = "none";
     }
 
-    const handleHoverStart = () => {
+    const handleHoverStart = (e: Event) => {
+      const target = e.currentTarget as HTMLElement;
+      const isProjectRow = target.hasAttribute('data-project-row');
+
       if (dotRef.current && ringRef.current) {
-        dotRef.current.style.transform = `translate3d(${mouse.current.x}px, ${mouse.current.y}px, 0) scale(0)`;
-        ringRef.current.style.transform = `translate3d(${ring.current.x}px, ${ring.current.y}px, 0) scale(1.8)`;
-        ringRef.current.style.backgroundColor = "rgba(212,165,255,0.08)";
+        if (isProjectRow) {
+          dotRef.current.style.transform = `translate3d(${mouse.current.x}px, ${mouse.current.y}px, 0) scale(3)`;
+          ringRef.current.style.transform = `translate3d(${ring.current.x}px, ${ring.current.y}px, 0) scale(1.8)`;
+          ringRef.current.style.borderColor = "#9b5de5";
+          ringRef.current.style.backgroundColor = "transparent";
+        } else {
+          dotRef.current.style.transform = `translate3d(${mouse.current.x}px, ${mouse.current.y}px, 0) scale(0)`;
+          ringRef.current.style.transform = `translate3d(${ring.current.x}px, ${ring.current.y}px, 0) scale(1.8)`;
+          ringRef.current.style.backgroundColor = "rgba(212,165,255,0.08)";
+          ringRef.current.style.borderColor = "rgba(212,165,255,0.4)";
+        }
       }
     };
 
@@ -50,13 +61,16 @@ export default function Cursor() {
         dotRef.current.style.transform = `translate3d(${mouse.current.x}px, ${mouse.current.y}px, 0) scale(1)`;
         ringRef.current.style.transform = `translate3d(${ring.current.x}px, ${ring.current.y}px, 0) scale(1)`;
         ringRef.current.style.backgroundColor = "transparent";
+        ringRef.current.style.borderColor = "rgba(212,165,255,0.4)";
       }
     };
 
-    // Attach hover effect to all links and buttons
+    // Attach hover effect to all links, buttons, and project rows
     const attachHoverEffects = () => {
-      const interactables = document.querySelectorAll("a, button");
+      const interactables = document.querySelectorAll("a, button, [data-project-row]");
       interactables.forEach((el) => {
+        el.removeEventListener("mouseenter", handleHoverStart);
+        el.removeEventListener("mouseleave", handleHoverEnd);
         el.addEventListener("mouseenter", handleHoverStart);
         el.addEventListener("mouseleave", handleHoverEnd);
       });

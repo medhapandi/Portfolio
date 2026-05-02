@@ -6,7 +6,7 @@ export const personalInfo = {
   availability: "Available for work",
   email: "medhapandi@gmail.com",
   socialLinks: {
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/pandi-medha/",
     dribbble: "#",
     github: "#",
     instagram: "#"
@@ -41,7 +41,7 @@ export const projects = [
     year: "2026",
     description: "Designed a wedding planning mobile experience simplifying vendor discovery, budgeting and event coordination. Built full user journeys, wireframes and high-fidelity interfaces.",
     tags: ["Figma", "FigJam", "UX Research", "Mobile Design", "Prototyping"],
-    link: "#"
+    link: "/case-study/brideease"
   },
   {
     id: "02",
@@ -49,7 +49,7 @@ export const projects = [
     year: "2026",
     description: "A service discovery and booking app helping users find and schedule trusted professionals. Focused on transparency, usability and seamless booking flows.",
     tags: ["Figma", "FigJam", "Interaction Design", "User Flows", "UI Systems"],
-    link: "#"
+    link: "/case-study/local-service"
   }
 ];
 
