@@ -98,7 +98,7 @@ export default function Projects() {
                 {/* Number */}
                 <span
                   className="text-sm tracking-widest font-sans transition-colors duration-350 ease-[cubic-bezier(0.16,1,0.3,1)]"
-                  style={{ color: isHovered ? "#9b5de5" : "rgba(200,190,255,0.2)" }}
+                  style={{ color: isHovered ? "#9b5de5" : "#ffffff" }}
                 >
                   {project.id}
                 </span>
