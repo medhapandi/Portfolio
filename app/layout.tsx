@@ -16,8 +16,8 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Medha P — UI/UX Designer",
-  description: "Portfolio of Medha P, UI/UX Designer crafting user-centered digital products.",
+  title: "Medha P — UI/UX Designer & AI-Driven Front-End Developer",
+  description: "Portfolio of Medha P, UI/UX Designer who leverages AI tools and agents to bring designs to life.",
 };
 
 export default function RootLayout({

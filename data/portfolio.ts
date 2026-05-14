@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Med Designs",
-  role: "UI/UX Designer & Front-End Developer",
+  role: "UI/UX Designer & AI-Driven Front-End Developer",
   tagline: "Designing things people love to use",
   location: "Hosur, IN",
   availability: "Available for work",
@@ -11,11 +11,11 @@ export const personalInfo = {
     github: "#",
     instagram: "#"
   },
-  bio: "UI/UX Designer & Front-End Developer with hands-on experience shipping user-centered digital products — from research and wireframes to production-ready code. I design systems that scale and build interfaces that perform.",
+  bio: "UI/UX Designer who harnesses AI tools and coding agents to bridge the gap between design and development — turning high-fidelity concepts into production-ready interfaces with precision and speed.",
   about: [
-    "I'm Medha — a UI/UX Designer and Front-End Developer who operates at the intersection of design and engineering. With a degree in Computer Science & Engineering, I don't just hand off mockups — I build what I design, ensuring pixel-perfect execution and real-world performance.",
-    "I've led end-to-end product design cycles across mobile and web — conducting user research, mapping complex journeys, architecting information systems, and translating findings into high-fidelity prototypes. On the development side, I work with React, Next.js, and modern CSS to bring those designs to life with clean, maintainable code.",
-    "I thrive in cross-functional environments where design and development move together. Whether it's building a scalable component library, optimizing interaction patterns, or debugging a layout at 2 AM — I ship work that's polished, accessible, and built to last."
+    "I'm Medha — a UI/UX Designer who leverages AI-powered tools and coding agents to bring designs to life. With a degree in Computer Science & Engineering, I don't just hand off mockups — I use AI to accelerate front-end development, ensuring pixel-perfect execution without compromising on craft.",
+    "I've led end-to-end product design cycles across mobile and web — conducting user research, mapping complex journeys, architecting information systems, and translating findings into high-fidelity prototypes. On the development side, I pair AI coding agents with frameworks like React and Next.js to ship polished interfaces faster than traditional workflows.",
+    "I thrive at the frontier where design thinking meets AI-augmented engineering. Whether it's prompting an agent to scaffold a component library, fine-tuning interaction patterns, or iterating on layouts in real time — I ship work that's polished, accessible, and built to last."
   ]
 };
 
