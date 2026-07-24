@@ -65,7 +65,7 @@ export default function Projects() {
                     {project.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="text-[10px] uppercase tracking-widest text-[var(--accent)] bg-[var(--accent-surface)] px-3 py-1.5 rounded-full font-bold"
+                        className="text-[10px] uppercase tracking-widest text-white bg-[var(--accent-surface)] px-3 py-1.5 rounded-full font-bold"
                       >
                         {tag}
                       </span>
